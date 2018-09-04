@@ -1,0 +1,20 @@
+{
+  "name": "node-es6-starter",
+  "version": "0.1.0",
+  "description": "A very basic starter for Node project, using ES6 and Babel 7",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node app/index.js",
+    "build": "babel app/ --out-dir dist --presets=@babel/env",
+    "serve": "npm run build && node dist/"
+  },
+  "author": "CaptainYouz <captainyouz@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "nodemon": "^1.18.4"
+  }
+}
